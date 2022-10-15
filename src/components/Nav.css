@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li{
+  padding: 0 1rem;
+}
+
+.nav-links li a{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
