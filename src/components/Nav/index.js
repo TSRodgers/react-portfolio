@@ -15,7 +15,7 @@ const Nav = (props) => {
   return (
     <div className='nav'>
       <a href='/'>
-        <h1>Portfolio</h1>
+        <h1>Tyler Rodgers</h1>
       </a>
       <ul className='nav-links'>
         {pages.map((page) => (

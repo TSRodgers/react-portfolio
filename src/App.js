@@ -17,7 +17,7 @@ function App() {
     { name: 'Resume'}
   ]);
   
-  const [currentPage, setCurrentPage] = useState(pages[0]);
+  const [currentPage, setCurrentPage] = useState(pages[2]);
 
   useEffect(() => {
     document.title = currentPage.name
