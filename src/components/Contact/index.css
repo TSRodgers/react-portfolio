@@ -1,0 +1,20 @@
+label {
+  color: #fff1d0;
+  margin-bottom: 0.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1rem;
+  margin: auto;
+  max-width: 600px;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  background-color: #06aed5;
+  border-color: #f0c808;
+  color: #fff1d0;
+}

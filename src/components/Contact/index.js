@@ -18,7 +18,6 @@ const Contact = () => {
           <textarea rows={6} placeholder='Type Your Message Here'></textarea>
           <button className='btn'>Submit</button>
         </form>
-
       </div>
     </div>
   )
