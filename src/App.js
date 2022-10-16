@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import Project from "./components/Project";
@@ -48,6 +49,7 @@ function App() {
           <Hero/>
         )}
       </main>
+      <Footer/>
     </div>
     
   );
