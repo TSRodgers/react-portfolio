@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Project from "./components/Project";
-import Resume from "./components/Resume";
 import './index.css'
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
     { name: 'Projects' },
     { name: 'About' },
     { name: 'Contact' },
-    { name: 'Resume'}
   ]);
   
   const [currentPage, setCurrentPage] = useState(pages[2]);
@@ -32,7 +30,7 @@ function App() {
       /> 
       <main>
         {currentPage.name === 'Home' ? (
-          <Hero
+          <Home
           pages={pages}
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
@@ -43,10 +41,8 @@ function App() {
           <About/>
         ) : currentPage.name === 'Contact' ? (
           <Contact/>
-        ) : currentPage.name === 'Resume' ? (
-          <Resume/>
         ) : (
-          <Hero/>
+          <Home/>
         )}
       </main>
       <Footer/>

@@ -20,7 +20,7 @@ const Footer = () => {
             tyler.rodgers74@gmail.com
           </div>
        </div>
-        <div className='about'>
+        <div className='info'>
           <h4>About me</h4>
           <p>My name is Tyler Rodgers, and I am a student attending the UNC Coding Bootcamp.
             This portfolio is a current work in progress, created for a class assignment.</p>

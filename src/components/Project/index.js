@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from '../Hero'
 
 const Project = () => {
   return (
-    <div>Project</div>
+    <div>
+      <Hero heading='Projects.' text='Recent works'/>
+    </div>
   )
 }
 
