@@ -3,11 +3,11 @@ import jate from '../../assets/images/jate.png';
 import hospitium from '../../assets/images/hospitium.png';
 import bart from '../../assets/images/diy-bartender.png';
 import tracker from '../../assets/images/employee-tracker.png';
-import social from '../../assets/images/social-network-api';
+import social from '../../assets/images/social-network-api.png';
 import quiz from '../../assets/images/codequiz.png';
 
 const WorkList = () => {
-  const workList = [
+  const workData = [
     {
       name: 'Hospitium',
       img: hospitium,
@@ -40,7 +40,18 @@ const WorkList = () => {
     }
   ]
   return (
-    <div>index</div>
+    <div>
+      <div className='project'>
+        <div className='project-container'> 
+              {workData.map((image, i) => (
+                <div className='project-card'>
+                  <img src={image.img} alt={image.name} key={i}/>
+                  <h2 className='project-title'>{image.name}</h2>
+                </div>
+              ))}
+        </div>
+      </div>
+    </div>
   )
 }
 
