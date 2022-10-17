@@ -26,24 +26,6 @@ const Home = (props) => {
         <div className='content'>
           <p>Hi, I'm Tyler Rodgers</p>
           <h1>Full-Stack Developer.</h1>
-          <ul>
-            {heroPages.map((page) => (
-          <li 
-            className={`btn ${
-              currentPage.name === page.name
-            }`}
-            key={page.name}
-          >
-            <span 
-              onClick={() => {
-                setCurrentPage(page);
-              }}
-            >
-              {page.name}
-            </span>
-          </li>
-        ))}
-          </ul>
         </div>
       </div>
     </div>
