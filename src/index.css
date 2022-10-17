@@ -11,7 +11,7 @@ body {
   background: #086788;
 }
 
-h1, h4, p, a, li {
+h1, h4, h3, p, a, li {
   color: #fff1d0;
   text-decoration: none;
 }
@@ -26,14 +26,10 @@ ul {
   background: #f0c808;
   color: #086788;
   border: 1px solid #f0c808;
+  border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
   transform: scale(1);
-}
-
-.btn-alt {
-  background: transparent;
-  color: #f0c808;
 }
 
 .btn:hover {
@@ -41,4 +37,48 @@ ul {
   color: #086788;
   border: 1px solid #086788;
   transition: 0.3s;
+}
+
+.modalBackdrop {
+	background: rgba(8, 103, 136, 0.65);
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 3;
+}
+
+.modalContainer {
+	background: rgba(8, 103, 136, 1);
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding: 15px;
+	width: 960px;
+}
+
+.modalContainer img {
+  width: 100%;
+}
+
+.modalTitle {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.view-link, .source-link {
+  color: #f0c808;
+}
+
+.view-link:hover, .source-link:hover {
+  color: #fff1d0;
 }

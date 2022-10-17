@@ -13,7 +13,8 @@
 
 .project-card {
   background: #06aed5;
-  border: 1px solid #f0c808;
+  border: 2px solid #f0c808;
+  border-radius: 5px;
   color: #fff1d0;
   text-align: center;
   padding: 1.2rem 1rem;

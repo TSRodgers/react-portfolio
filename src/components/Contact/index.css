@@ -16,5 +16,6 @@ form input, form textarea {
   font-size: 1.2rem;
   background-color: #06aed5;
   border-color: #f0c808;
+  border-radius: 5px;
   color: #fff1d0;
 }
