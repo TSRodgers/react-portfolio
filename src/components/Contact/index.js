@@ -10,7 +10,6 @@ const Contact = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   function handleChange(e) {
-    //targets email input
     if (e.target.name === email) {
       const isValid = validateEmail(e.target.value);
       console.log(isValid);

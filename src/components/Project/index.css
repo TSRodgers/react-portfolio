@@ -1,0 +1,28 @@
+.project {
+  width: 100%;
+  margin: 3rem 0;
+}
+.project-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding-bottom: 5rem;
+}
+
+.project-card {
+  background: #06aed5;
+  border: 1px solid #f0c808;
+  color: #fff1d0;
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+.project-card:hover {
+  background-color: #f0c808;
+}
+
+.project-card img {
+  width: 100%;
+}
