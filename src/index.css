@@ -1,13 +1,84 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #086788;
+}
+
+h1, h4, h3, p, a, li {
+  color: #fff1d0;
+  text-decoration: none;
+}
+
+ul {
+   list-style-type: none;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  background: #f0c808;
+  color: #086788;
+  border: 1px solid #f0c808;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.btn:hover {
+  background: #fff1d0;
+  color: #086788;
+  border: 1px solid #086788;
+  transition: 0.3s;
+}
+
+.modalBackdrop {
+	background: rgba(8, 103, 136, 0.65);
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 3;
+}
+
+.modalContainer {
+	background: rgba(8, 103, 136, 1);
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding: 15px;
+	width: 960px;
+}
+
+.modalContainer img {
+  width: 100%;
+}
+
+.modalTitle {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.view-link, .source-link {
+  color: #f0c808;
+}
+
+.view-link:hover, .source-link:hover {
+  color: #fff1d0;
 }

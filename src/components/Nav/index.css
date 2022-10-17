@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 10;
+}
+
+.nav-bg {
+  background-color: #086788;
+  opacity: .4;
+  transition: 0.5s;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li{
+  padding: 0 1rem;
+}
+
+.nav-links li a{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
