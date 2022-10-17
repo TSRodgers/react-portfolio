@@ -11,7 +11,7 @@
   * [Questions](#questions)
   
   ## Usage 
-  Allows users to view an about me page, see my previous projects, download my resume, and contact me via email.
+  Allows users to view an about me page, see my previous projects, download my resume, and contact me via email. View the deployed application [here.](http://TSRodgers.github.io/react-portfolio)
   <img src='./src/assets/images/screenshot.jpg' />
 
   ## License 
