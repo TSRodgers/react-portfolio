@@ -1,22 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import HeroImg from '../../assets/images/heroimg.jpg';
 import './index.css'
 
 const Home = (props) => {
-  const {
-    setCurrentPage,
-    currentPage,
-  } = props;
-  
-  const heroPages = [
-    { name: 'Projects' },
-    { name: 'Contact' }
-  ];
-
-  useEffect(() => {
-    document.title = currentPage.name
-  });
-
   return (
     <div>
       <div className='hero'>

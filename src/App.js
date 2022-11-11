@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -8,44 +9,19 @@ import Project from "./components/Project";
 import './index.css'
 
 function App() {
-  const [pages] = useState([
-    { name: 'Home' },
-    { name: 'Projects' },
-    { name: 'About' },
-    { name: 'Contact' },
-  ]);
   
-  const [currentPage, setCurrentPage] = useState(pages[0]);
-
-  useEffect(() => {
-    document.title = currentPage.name
-  });
-
   return (
     <div>
-      <Nav 
-        pages={pages}
-        setCurrentPage={setCurrentPage}
-        currentPage={currentPage}
-      /> 
-      <main>
-        {currentPage.name === 'Home' ? (
-          <Home
-          pages={pages}
-          setCurrentPage={setCurrentPage}
-          currentPage={currentPage}
-        />
-        ) : currentPage.name === 'Projects' ? (
-          <Project/>
-        ) : currentPage.name === 'About' ? (
-          <About/>
-        ) : currentPage.name === 'Contact' ? (
-          <Contact/>
-        ) : (
-          <Home/>
-        )}
-      </main>
-      <Footer/>
+      <Router>
+      <Nav/> 
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/projects' element={<Project/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+        <Footer/>
+      </Router>
     </div>
     
   );

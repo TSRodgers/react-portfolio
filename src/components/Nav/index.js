@@ -1,39 +1,26 @@
-import React, { useEffect } from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './index.css'
 
-const Nav = (props) => {
-  const {
-    pages = [],
-    setCurrentPage,
-    currentPage,
-  } = props;
-  
-  useEffect(() => {
-    document.title = currentPage.name
-  });
-
+const Nav = () => {
   return (
     <div className='nav'>
-      <a href='/'>
+      <Link to='/'>
         <h1>Tyler Rodgers</h1>
-      </a>
+      </Link>
       <ul className='nav-links'>
-        {pages.map((page) => (
-          <li 
-            className={`${
-              currentPage.name === page.name
-            }`}
-            key={page.name}
-          >
-            <span 
-              onClick={() => {
-                setCurrentPage(page);
-              }}
-            >
-              {page.name}
-            </span>
-          </li>
-        ))}
+      <li>
+          <Link to='/'>Home</Link>
+        </li>
+        <li>
+          <Link to='/projects'>Projects</Link>
+        </li>
+        <li>
+          <Link to='/about'>About</Link>
+        </li>
+        <li>
+          <Link to='/contact'>Contact</Link>
+        </li>
       </ul>
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import { FaDesktop, FaGithub } from 'react-icons/fa'
 
 const Modal = ({ onClose, currentProject }) => {
-  const {name, img, description, view, source} = currentProject;
+  const {name, img, description, view, source, tech} = currentProject;
 
   return (
     <div className='modalBackdrop'>
@@ -11,6 +11,9 @@ const Modal = ({ onClose, currentProject }) => {
         <img src={img} alt={name} />
         <p>
           {description}
+        </p>
+        <p>
+          Technologies used: {tech}
         </p>
         <div className='btn-container'>
           <div className='close-btn'>
