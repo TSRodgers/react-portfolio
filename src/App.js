@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -12,7 +12,6 @@ function App() {
   
   return (
     <div>
-      <Router>
       <Nav/> 
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -21,7 +20,6 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
         <Footer/>
-      </Router>
     </div>
     
   );
