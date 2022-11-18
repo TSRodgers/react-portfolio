@@ -20,6 +20,11 @@ ul {
    list-style-type: none;
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .btn {
   padding: 12px 32px;
   font-size: 1rem;
@@ -52,7 +57,7 @@ ul {
 	position: fixed;
 	right: 0;
 	top: 0;
-	z-index: 3;
+	z-index: 10;
 }
 
 .modalContainer {

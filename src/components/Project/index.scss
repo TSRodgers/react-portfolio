@@ -6,52 +6,161 @@
 .project-container {
   max-width: 1300px;
   margin: auto;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
-  padding-bottom: 5rem;
-  .project-card {
-    width: auto;
-    background: #06aed5;
-    border-radius: 5px;
-    color: #fff1d0;
-    text-align: center;
-    padding: 1.2rem 1rem;
-    box-shadow: 5px 5px 10px black;
+  background: #086788;
+  padding: 1.2rem 1rem;
+  overflow: hidden;
+      .project-card {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-size: cover;
+        float: left;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        background-position: center;
+        margin: 10px;
+        box-shadow: 5px 5px 10px black;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
       img {
         width: 100%;
       }
-    
-    &:hover {
+      h2 {
+        position: absolute;
+        top: 60%;
+        left: -100%;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 20px;
+        z-index: 8;
+        transition: all .6s ease;
+      }
       p {
-        left: 8%;
+        position: absolute;
+        top: 70%;
+        left: -100%;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 10px;
+        z-index: 8;
+        transition: all .6s ease;
       }
-      img: {
-        transform: translateY(-15px);
-      }
-      .card-rect {
-        top: 75%;
-        &::before {
-          transform: translateY(15px);
+      
+      &:hover {
+        h2, p {
+          left: 4%;
+        }
+        img: {
+          transform: translateY(-15px);
+        }
+        .card-rect {
+          top: 75%;
+
+          &::before {
+            transform: translateY(15px);
+          }
+        }
+        li {
+          transform: translateY(0);
+        }
+        .card-tri {
+          right: -40%;
+          &::before {
+            right: -312px;
+          }
         }
       }
-      li {
-        transform: translateY(0);
+      img {
+        transition: all .2s ease;
       }
       .card-tri {
-        right: -40%;
-        &::before {
-          right: -312px;
+        border-top: 220px solid transparent;
+        border-bottom: 190px solid transparent;
+        border-right: 288px solid #fff1d0;
+        opacity: .9;
+        position: absolute;
+        display: block;
+        top: -50%;
+        right: -100%;
+        transition: all .3s ease-in-out;
+        
+        &:before {
+          border-top: 220px solid transparent;
+          border-bottom: 190px solid transparent;
+          border-right: 288px solid #f0c808;
+          position: absolute;
+          content: '';
+          display: block;
+          top: -220px;
+          right: -612px;
+          transition: all .3s ease-in-out;
+          transition-delay: .2s;
+        }
+      }
+      .card-rect {
+        width: 750px;
+        height: 200px;
+        background: #fff1d0;
+        display: block;
+        position: absolute;
+        top: 175%;
+        left: -25%;
+        transform: rotate(30deg);
+        z-index: 2;
+        opacity: .9;
+        transition: all .3s ease-in-out;
+        
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          position: relative;
+          height: 100%;
+          background: #086788;
+          transform: translateY(200px);
+          z-index: 2;
+          transition: all .3s ease-in-out;
+          transition-delay: .1s;
+        }
+      }
+      ul {
+        list-style: none;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        z-index: 9;
+
+        li {
+          display: inline-block;
+          font-size: 16px;
+          margin: 7px;
+          transition: all .2s ease-in-out;
+          transform: translateY(100px);
+
+          &a {
+            color: #f0c808;
+          }
+
+          &:nth-child(1) {
+            transition-delay: .2s;
+          }
+          
+          &:nth-child(2) {
+            transition-delay: .3s;
+          }
+          
+          &:nth-child(4) {
+            transition-delay: .4s;
+          }
         }
       }
     }
-
-    img {
-      transition: all .2s ease;
-    }
-    }
   }
-
 
 @media screen and (max-width: 865px) {
   .project-container {

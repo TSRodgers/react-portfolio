@@ -52,7 +52,7 @@ const WorkList = () => {
       tech: 'MongoDB, REST APIs'
     },
     {
-      name: 'Just Another Text Editor',
+      name: 'J.A.T.E',
       img: jate,
       description: 'A functional PWA text editor, with offline capabilites',
       view: 'https://salty-castle-85709.herokuapp.com/',
@@ -73,14 +73,17 @@ const WorkList = () => {
         <div className='project-container'> 
               {workData.map((image, i) => (
                     <div className='project-card' onClick={() => toggleModal(image, i)}>
-                      <img src={image.img} alt={image.name} key={i}/>
+                      <img className='img-responsive' src={image.img} alt={image.name} key={i}/>
                       <span className='card-rect'></span>
                       <span className='card-tri'></span>
-                      <p className='transition'>{image.name}</p>
+                      <h2 className='transition'>{image.name}</h2>
+                      <p>Click for more info...</p>
                       <ul className='card-links'>
                         <li>
-                          <a href={image.view}><FaDesktop/></a>
-                          <a href={image.source}><FaGithub/></a> 
+                          <a className='view-link' href={image.view}><FaDesktop size={30}/></a> 
+                        </li>
+                        <li>
+                          <a className='source-link' href={image.source}><FaGithub size={30}/></a>
                         </li>
                       </ul>
                     </div>
