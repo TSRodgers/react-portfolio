@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../Hero';
-import './index.css';
+import './index.scss';
 import WorkList from '../WorkList';
 
 const Project = () => {

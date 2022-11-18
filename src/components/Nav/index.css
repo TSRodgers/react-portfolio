@@ -27,3 +27,43 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+
+.bars {
+  display: none;
+}
+
+.nav-links li a:hover {
+  color: #f0c808;
+}
+
+@media screen and (max-width: 1040px) {
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(8, 103, 136, 0.9);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -3;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  .nav-links li a {
+    font-size: 2rem;
+  }
+
+  .bars {
+    display: initial;
+  }
+}

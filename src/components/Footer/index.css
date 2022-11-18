@@ -19,18 +19,10 @@
   padding: 1rem;
 }
 
-.address {
-  display: flex;
-  margin-bottom: 1rem;
-}
-
-.address p {
-  line-height: 30px;
-}
-
-.phone, .mail {
+.phone, .mail, .address {
   color: #fff1d0;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
 }
 
 .icons {

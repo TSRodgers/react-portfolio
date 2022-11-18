@@ -32,6 +32,11 @@ ul {
   transform: scale(1);
 }
 
+.btn-alt {
+  background: transparent;
+  color: #f0c808;
+}
+
 .btn:hover {
   background: #fff1d0;
   color: #086788;
@@ -53,10 +58,11 @@ ul {
 .modalContainer {
 	background: rgba(8, 103, 136, 1);
 	border-radius: 5px;
-	max-width: 100%;
+	max-width: 90%;
 	margin: 50px auto;
 	padding: 15px;
 	width: 960px;
+  box-shadow: 5px 5px 10px black;
 }
 
 .modalContainer img {
@@ -80,5 +86,14 @@ ul {
 }
 
 .view-link:hover, .source-link:hover {
+  color: #fff1d0;
+}
+
+.icons-link {
+  color: #f0c808;
+  transition: all .2s ease-in-out;
+}
+
+.icons-link:hover {
   color: #fff1d0;
 }

@@ -6,6 +6,8 @@ import tracker from '../../assets/images/employee-tracker.png';
 import social from '../../assets/images/social-network-api.png';
 import grimes from '../../assets/images/grimes.jpg'
 import Modal from '../Modal';
+import './index.scss';
+import { FaDesktop, FaGithub } from 'react-icons/fa';
 
 const WorkList = () => {
   const workData = [
@@ -52,7 +54,7 @@ const WorkList = () => {
     {
       name: 'Just Another Text Editor',
       img: jate,
-      description: 'A function PWA text editor, with offline capabilites',
+      description: 'A functional PWA text editor, with offline capabilites',
       view: 'https://salty-castle-85709.herokuapp.com/',
       source: 'https://github.com/TSRodgers/text-editor',
       tech: 'Node.js, Express.js, Webpack, SWA'
@@ -70,10 +72,18 @@ const WorkList = () => {
       <div className='project'>
         <div className='project-container'> 
               {workData.map((image, i) => (
-                <div className='project-card' onClick={() => toggleModal(image, i)}>
-                  <img src={image.img} alt={image.name} key={i}/>
-                  <h2 className='project-title'>{image.name}</h2>
-                </div>
+                    <div className='project-card' onClick={() => toggleModal(image, i)}>
+                      <img src={image.img} alt={image.name} key={i}/>
+                      <span className='card-rect'></span>
+                      <span className='card-tri'></span>
+                      <p className='transition'>{image.name}</p>
+                      <ul className='card-links'>
+                        <li>
+                          <a href={image.view}><FaDesktop/></a>
+                          <a href={image.source}><FaGithub/></a> 
+                        </li>
+                      </ul>
+                    </div>
               ))}
         </div>
       </div>

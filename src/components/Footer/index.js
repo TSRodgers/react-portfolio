@@ -9,7 +9,7 @@ const Footer = () => {
        <div className='contact'>
           <div className='address'>
             <FaHome size={20} style={{color: '#f0c808', marginRight: '2rem'}}/>
-            <p>Raleigh, NC</p>
+            Raleigh, NC
           </div>
           <div className='phone'>
             <FaPhone size={20} style={{color: '#f0c808', marginRight: '2rem'}}/>
@@ -25,14 +25,20 @@ const Footer = () => {
           <p>My name is Tyler Rodgers, and I am a student attending the UNC Coding Bootcamp.
             This portfolio is a current work in progress, created for a class assignment.</p>
           <div className='icons'>
-           <a href='https://github.com/TSRodgers'> <FaGithub size={30} style={{color: '#f0c808', marginRight: '1rem'}}/></a>
-           <a href='https://www.linkedin.com/in/tyler-rodgers-8a6259237/'> <FaLinkedin size={30} style={{color: '#f0c808', marginRight: '1rem'}}/></a>
-            <a href='https://stackoverflow.com/users/18741594/tyler-rodgers'><FaStackOverflow size={30} style={{color: '#f0c808', marginRight: '1rem'}}/></a>
+            <a className='icons-link' href='https://github.com/TSRodgers' target='_blank' rel='noreferrer'>
+              <FaGithub size={30} style={{marginRight: '1rem'}}/>
+            </a>
+            <a className='icons-link' href='https://www.linkedin.com/in/tyler-rodgers-8a6259237/' target='_blank' rel='noreferrer'>
+              <FaLinkedin size={30} style={{marginRight: '1rem'}}/>
+            </a>
+            <a className='icons-link' href='https://stackoverflow.com/users/18741594/tyler-rodgers' target='_blank' rel='noreferrer'>
+              <FaStackOverflow size={30} style={{marginRight: '1rem'}}/>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  )
+  ) 
 }
 
 export default Footer;
