@@ -1,39 +1,23 @@
 .footer {
   width: 100%;
   padding: 6rem 0;
+  border-top: 5px solid #f0c808;
 }
 
 .footer-container {
   max-width: 1140px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
-}
-
-.contact, .about {
-  height: 100%;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-}
-
-.phone, .mail, .address {
-  color: #fff1d0;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-h4 {
-  font-size: 1.2rem;
-  padding-bottom: 0.7rem;
-}
-
-p {
-  font-size: 1.2rem;
+.name p{
+  color: #f0c808;
 }
