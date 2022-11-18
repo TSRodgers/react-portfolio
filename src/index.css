@@ -99,6 +99,10 @@ ul {
   transition: all .2s ease-in-out;
 }
 
+.icons {
+  color: #f0c808;
+}
+
 .icons-link:hover {
   color: #fff1d0;
 }

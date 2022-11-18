@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Hero from '../Hero'
-import './index.css'
+import Map from '../Map'
+import { FaMailBulk, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
+import './index.scss'
 import { validateEmail } from '../../utils/helpers';
 import { send } from 'emailjs-com';
 
@@ -54,21 +56,44 @@ const Contact = () => {
   return (
     <div>
       <Hero heading='Contact.' text='Get in touch with me' />
-      <div className='form'>
-        <form onSubmit={handleSubmit}>
-            <label htmlFor='name'>Your Name</label>
-            <input type='text' name='name' defaultValue={name} onBlur={handleChange}/>       
-            <label htmlFor='email'>Email</label>
-            <input type='email' name='email' defaultValue={email} onBlur={handleChange}/>
-            <label htmlFor='message'>Message</label>
-            <textarea rows={6} placeholder='Type Your Message Here' name='message' defaultValue={message} onBlur={handleChange}/>
-          {errorMessage && (
-            <div>
-              <p className='error-text'>{errorMessage}</p>
+      <div className='contact-container'>
+        <div className='info'>
+            <div className='map'>
+              <Map/>
             </div>
-          )}
-          <button className='btn'>Submit</button>
-        </form>
+            <div className='info-icons'>
+              <ul>
+                <li>
+                  <FaMapMarkerAlt size={30} className='icons'/>
+                  Raleigh, NC
+                </li>
+                <li>
+                  <FaPhone size={30} className='icons'/>
+                  +1 (919)-413-3545
+                </li>
+                <li>
+                  <FaMailBulk size={30} className='icons'/>
+                  tyler.rodgers74@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div className='form'>
+          <form onSubmit={handleSubmit}>
+              <label htmlFor='name'>Your Name</label>
+              <input type='text' name='name' defaultValue={name} onBlur={handleChange}/>       
+              <label htmlFor='email'>Email</label>
+              <input type='email' name='email' defaultValue={email} onBlur={handleChange}/>
+              <label htmlFor='message'>Message</label>
+              <textarea rows={6} placeholder='Type Your Message Here' name='message' defaultValue={message} onBlur={handleChange}/>
+            {errorMessage && (
+              <div>
+                <p className='error-text'>{errorMessage}</p>
+              </div>
+            )}
+            <button className='btn'>Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   )

@@ -1,0 +1,18 @@
+.map-container {
+  width: 100%;
+  height: auto;
+  
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+
+    .gmap_canvas {
+      overflow: hidden;
+      background: none;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
