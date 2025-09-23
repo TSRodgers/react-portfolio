@@ -1,0 +1,112 @@
+.experience {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+
+  .experience-content {
+    text-align: center;
+    padding: 1.5rem;
+    max-width: 1000px;
+
+    p {
+      margin: 1.5rem auto;
+      max-width: 800px;
+    }
+
+    h2 {
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+    }
+
+    .bullets,
+    .role ul,
+    .xp-list {
+      margin: 0 auto 1.5rem;
+      padding-left: 0;          /* remove default indent */
+      list-style-position: inside; /* keeps bullets inline with text */
+      text-align: center;      /* center text under bullets */
+      max-width: 800px;
+
+      li {
+        margin: 0.4rem 0;
+        color: #fff1d0;
+        font-size: 0.95rem;
+      }
+    }
+
+    .role {
+      margin: 1.25rem auto;
+      max-width: 900px;
+
+      h3 {
+        margin-bottom: .25rem;
+      }
+
+      .meta {
+        opacity: 0.8;
+        margin-bottom: .5rem;
+      }
+    }
+  }
+
+  .xp-side {
+  max-width: 600px;
+  text-align: center;
+  padding: 1rem;
+
+  h1 {
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  .xp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+
+    .tag {
+      background: #f0c808;       /* yellow accent */
+      color: #086788;            /* brand blue */
+      border: 1px solid #f0c808;
+      border-radius: 16px;
+      padding: 6px 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: default;          /* not clickable */
+      transition: none;         /* removes hover animation */
+    }
+  }
+
+  .mt { margin-top: 1rem; }
+
+  .tiny {
+    margin: .5rem auto 1.5rem;
+    opacity: 0.9;
+    line-height: 1.4;
+    max-width: 800px;
+  }
+}
+}
+
+@media (max-width: 768px) {
+  .experience {
+    .experience-content {
+      text-align: left;
+
+      p { margin: 1rem 0; }
+      .role { padding: 0 .25rem; }
+    }
+
+    .xp-side {
+      max-width: 600px;
+      .xp-tags { gap: .4rem .4rem; }
+      .tag { font-size: 0.85rem; }
+    }
+  }
+}

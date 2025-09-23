@@ -5,20 +5,23 @@ import './index.scss';
 const About = () => {
   return (
    <div>
-    <Hero heading='About me.' text='Aspiring Full-Stack Developer'/>
+    <Hero heading='About me.' text='Enterprise BDR'/>
       <div className='about'>
           <div className='about-content'>
             <h1>Who Am I?</h1>
               <p>
-                My name is Tyler Rodgers, and I am a Full-Stack Developer. I attended Appalachian State University in Boone, North Carolina, for four years. After numerous times of changing to various healthcare-related majors, I decided it was time to take a step back and genuinely figure out what I wanted to do. During this time, I have had several work roles ranging from line cook to yard manager of a commercial tire company. These experiences have effectively taught me vital soft-skills such as time management, attention to detail, leadership, as well as teamwork.
+                My name is Tyler Rodgers, and I’m a Business Development Rep based in Raleigh, NC. Right now I’m at Digital.ai, where in my first six months I’ve generated over $750K in pipeline and booked 20+ enterprise meetings with leaders like CISOs and VPs of Engineering.
               </p>
               <p>
-                With addition to being naturally driven, curious and a problem solver, I aim to use these skills to provide meaningful solutions and high quality customer facing applications. I've recently earned a certificate in Full Stack Web Development from the University of North Carolina, Chapel Hill. With the skills I've accquired, I have set out to grow my potential as a developer. To do so, I am currently working through Havard Universities free CS50 course to strengthen my fundamentals as well as consistently working on new projects and breaking out of my comfort zone by implementing technologies and languages I'm not familiar with.
+                Before I moved into SaaS sales, I earned a certificate in Full Stack Web Development from UNC Chapel Hill. I don’t code day-to-day anymore, but having that background makes it easier to talk with technical buyers and understand how the products I’m selling actually work.
               </p>
               <p>
-                Excited by the possibilities and challenges offered by this industry, I'm seeking entry-level oppprtunities, with the goal to work alongside seasoned tech professionals to continuously grow and expand my skillset.  
+                I’ve had all kinds of jobs along the way. From running kitchens to managing a tire yard, and those taught me how to manage my time, lead a team, and stay adaptable. Those skills carry over into sales, where curiosity, persistence, and clear communication are what move the needle.
               </p>
-            <a href='https://www.dropbox.com/s/j3o0piu85hie31n/Tyler%20Rodgers%20-%20Resume%20%281%29.pdf?dl=0' target='_blank' rel='noreferrer' className='btn'>Download Resume</a>
+              <p>
+                These days I’m focused on helping SaaS companies grow through prospecting, pipeline generation, and building relationships with the right people. Long term, I’m excited about moving into customer success so I can keep working directly with customers and help them get the most out of the products they use.
+              </p>
+            <a href='https://www.dropbox.com/scl/fi/ct7h9chea58pd9isb0wte/Tyler-Rodgers-Resume-2025.docx?rlkey=m6mhydtcdbsbvqg9tqa00eriq&st=nxncmese&dl=00' target='_blank' rel='noreferrer' className='btn'>Download Resume</a>
           </div>
         <div className='tech'>
           <h1>Technologies</h1>

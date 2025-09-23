@@ -6,7 +6,7 @@ import WorkList from '../WorkList';
 const Project = () => {
   return (
     <div>
-      <Hero heading='Projects.' text='Recent works'/>
+      <Hero heading='Projects.' text='Past works'/>
       <WorkList />
     </div>
   )

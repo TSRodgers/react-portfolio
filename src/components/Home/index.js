@@ -12,9 +12,10 @@ const Home = (props) => {
         </div>
         <div className='content'>
           <p>Hi, I'm Tyler Rodgers</p>
-          <h1>Full-Stack Developer.</h1>
+          <h1>Enterprise BDR.</h1>
+          <h6>Helping SaaS companies grow with outbound prospecting, pipeline generation, and multi-threaded engagement. Technical background in full-stack development helps me connect with developer buyers</h6>
           <div>
-            <Link to='/projects' className='btn'>Projects</Link>
+            <Link to='/experience' className='btn'>Experience</Link>
             <Link to='/contact' className='btn btn-alt'>Contact</Link>
           </div>
         </div>
