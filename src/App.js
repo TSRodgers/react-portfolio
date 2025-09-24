@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Project from "./components/Project";
 import Experience from "./components/Experience";
+import Error from "./components/Error"
 import './index.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path='/projects' element={<Project/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/contact' element={<Contact/>}/>
+            <Route path='/error' element={<Error/>}/>
           </Routes>
         <Footer/>
     </div>

@@ -50,7 +50,7 @@ const Contact = () => {
         console.log('Failed...', err);
       });
       
-      setErrorMessage('Success! Email sent.')
+      setErrorMessage('My API Key has expired and this no longer works. Feel free to email me directly at tyler.rodgers74@gmail.com :)')
   };
 
   return (

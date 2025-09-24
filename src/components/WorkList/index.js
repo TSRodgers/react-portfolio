@@ -6,6 +6,7 @@ import tracker from '../../assets/images/employee-tracker.png';
 import social from '../../assets/images/social-network-api.png';
 import grimes from '../../assets/images/grimes.jpg'
 import Modal from '../Modal';
+import { Link } from 'react-router-dom';
 import './index.scss';
 import { FaDesktop, FaGithub } from 'react-icons/fa';
 
@@ -80,7 +81,7 @@ const WorkList = () => {
                       <p>Click for more info...</p>
                       <ul className='card-links'>
                         <li>
-                          <a className='view-link' href={image.view}><FaDesktop size={30}/></a> 
+                          <Link to='/error' className='view-link'><FaDesktop size={30}/></Link> 
                         </li>
                         <li>
                           <a className='source-link' href={image.source}><FaGithub size={30}/></a>

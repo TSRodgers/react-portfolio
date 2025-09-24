@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaDesktop, FaGithub } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 const Modal = ({ onClose, currentProject }) => {
   const {name, img, description, view, source, tech} = currentProject;
@@ -22,7 +23,7 @@ const Modal = ({ onClose, currentProject }) => {
             </button>
           </div>
           <div className='link-btn'>
-            <a href={view}><FaDesktop className='view-link'  size={40} style={{marginRight: '2rem'}}/></a>
+            <Link to='/error'><FaDesktop className='view-link'  size={40} style={{marginRight: '2rem'}}/></Link>
             <a href={source}><FaGithub className='source-link' size={40} style={{marginRight: '2rem'}}/></a>
           </div>
         </div>
